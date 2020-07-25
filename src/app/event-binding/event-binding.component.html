@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-12 text-center p-3">
+        <h1>Event Binding Checkpoint</h1>
+      </div>
+      <div class="col-md-12 form mb-3">
+        <input
+          #myInput
+          class ="form-control"
+          type="text"
+          name="color"
+          id=""
+          value=""
+        >
+        <button (click)="onclick(myInput.value)" type="submit" class="btn btn-primary mt-2">Change the color</button>
+      </div>
+      <div
+        class="col-md-6"
+        [style.background-color]="color"
+      >
+        <p>Test color of input</p>
+      </div>
+  </div>
+</div>
