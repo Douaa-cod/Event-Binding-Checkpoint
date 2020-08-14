@@ -5,14 +5,13 @@
       </div>
       <div class="col-md-12 form mb-3">
         <input
-          #myInput
           class ="form-control"
           type="text"
           name="color"
           id=""
-          value=""
+          [(ngModel)]="color"
         >
-        <button (click)="onclick(myInput.value)" type="submit" class="btn btn-primary mt-2">Change the color</button>
+        <button (click)="onclick()" type="submit" class="btn btn-primary mt-2">Change the color</button>
       </div>
       <div
         class="col-md-6"

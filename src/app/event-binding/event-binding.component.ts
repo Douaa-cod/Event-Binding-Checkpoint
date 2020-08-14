@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event-binding.component.css']
 })
 export class EventBindingComponent implements OnInit {
-  color="";
+  color = "red";
+  colorInit = this.color
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onclick(colorInput) {
-    console.log(colorInput);
-    this.color = colorInput;
+  onclick() {
+    this.color = this.colorInit;
   }
 
 }
